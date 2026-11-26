@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| **Name** | _your full name_ |
-| **Nickname** | _your nickname_ |
-| **Student ID** | _6xxxxxxxx_ |
+| **Name** | _Natchapong_ |
+| **Nickname** | _Athen_ |
+| **Student ID** | _692115013_ |
 | **Section** | 701 |
 
 ## How to run
@@ -18,12 +18,12 @@ npm start        # Part D — the daily report
 
 ## My own function (Part D)
 
-_Name of your function, what it returns, and which array methods it uses._
+`itemsWithTag(menu, tag)` — returns an array of menu item names that include the given `tag`, and uses `.filter()` and `.map()`.
 
 ## What I learned today
 
-_Write 2–3 sentences in your own words: when would you use map, filter, find and reduce?_
+I use `map` when I want to transform every item into a new shape or value, and `filter` when I want to keep only items that match a condition. I use `find` to grab the first matching item (or `undefined` if none match), and `reduce` when I want to combine an array into a single result like a total or grouped object without mutating the original data.
 
 ## AI-use statement
 
-_Did you use an AI tool in this lab? If yes, which one and for what. If no, write "No AI tools used."_
+I used Gemini to explain steps more clearly, walk through tricky array methods and stretch tasks, and help debug when I got stuck, while trying to work through and understand the code myself.

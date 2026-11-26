@@ -18,8 +18,8 @@ Then open <http://localhost:3000> and <http://localhost:3000/api/me>.
 
 ## What I learned today
 
-_Write 2–3 sentences in your own words: what happens between typing a URL and seeing the page?_
+I learn to cd more clearly and to see how the process work in pushing git.
 
 ## AI-use statement
 
-_Did you use an AI tool in this lab? If yes, which one and for what (e.g., "ChatGPT to explain a Git error message"). If no, write "No AI tools used."_
+I use gemini to explain steps more clearly then i try do it , and try fix code by myself as much as possible , when if its come to hardship i ask for some little debug code trip a bit.
