@@ -78,11 +78,34 @@ export function averageOrder(orders, menu) {
 
 // Task 9 — return the NAME of the item with the highest total quantity sold.
 export function bestSeller(orders, menu) {
-  // TODO
+  if (!orders.length || !menu.length) return undefined;
+
+  const totalsById = orders
+    .flatMap((order) => order.items)
+    .reduce((acc, { menuId, qty }) => {
+      acc[menuId] = (acc[menuId] ?? 0) + qty;
+      return acc;
+    }, {});
+
+  const bestId = Object.entries(totalsById).reduce(
+    (best, [id, qty]) => (qty > best.qty ? { id, qty } : best),
+    { id: null, qty: -Infinity }
+  ).id;
+
+  const item = findItem(menu, bestId);
+  return item ? item.name : undefined;
 }
 
 // Task 10 — group item names by category:
 // { drink: ["Thai Iced Tea", ...], food: [...], dessert: [...] }
 export function namesByCategory(menu) {
+  return menu.reduce((acc, item) => {
+    const current = acc[item.category] ?? [];
+    return {
+      ...acc,
+      [item.category]: [...current, item.name],
+    };
+  }, {});
+
   // TODO
 }
