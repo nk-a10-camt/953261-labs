@@ -107,5 +107,13 @@ export function namesByCategory(menu) {
     };
   }, {});
 
-  // TODO
+
+}
+
+
+// Part D — custom function (filter + map)
+export function itemsWithTag(menu, tag) {
+  return menu
+    .filter((item) => Array.isArray(item.tags) && item.tags.includes(tag))
+    .map((item) => item.name);
 }
